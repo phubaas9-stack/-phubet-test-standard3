@@ -3,8 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ข้อมูลบุคลากร</title>
+    <title>ข้อมูลบุคลากร - วิทยาลัยเทคโนโลยีสารสนเทศ</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .personnel-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 15px;
+        }
+
+        .page-title {
+            text-align: center;
+            color: #002b49;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .page-title::after {
+            content: '';
+            width: 80px;
+            height: 3px;
+            background: #d4af37;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #002b49;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #1e293b;
+            font-size: 1.1rem;
+            margin: 10px 0 5px 0;
+        }
+
+        .card p {
+            color: #475569;
+            font-size: 0.9rem;
+            margin: 0;
+            font-weight: 500;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,42 +92,36 @@
         <a href="courses.html">สาขาวิชาที่เปิดสอน</a>
     </nav>
 
-    <main>
-        <h2>คณาจารย์และเจ้าหน้าที่</h2>
+    <main class="personnel-container">
+        <h2 class="page-title">คณาจารย์และเจ้าหน้าที่</h2>
+
         <div class="grid-container">
-            <!-- คนที่ 1 -->
+            <!-- บุคลากรที่ 1 -->
             <div class="card">
-                <img src="images/teacher1.jpg" alt="ครูผู้สอน">
-                <h3>นายกิตติศักดิ์ มีสุข</h3>
-                <p>หัวหน้าแผนกวิชาเทคโนโลยีสารสนเทศ</p>
+                <img src="11686.jpg" alt="นายณัฐพล อุ่นภักดิ์">
+                <h3>นายณัฐพล อุ่นภักดิ์</h3>
+                <p>หัวหน้าสาขาวิชาบริหารธุรกิจ</p>
             </div>
 
-            <!-- คนที่ 2 -->
+            <!-- บุคลากรที่ 2 -->
             <div class="card">
-                <img src="images/teacher2.jpg" alt="ครูผู้สอน">
-                <h3>นางสาวศิริพร ปัญญาดี</h3>
-                <p>ครูประจำแผนกวิชาคอมพิวเตอร์</p>
+                <img src="01041.jpg" alt="นายปรีชา มหาวัน">
+                <h3>นายปรีชา มหาวัน</h3>
+                <p>หัวหน้ากลุ่มงานพัฒนานักศึกษา</p>
             </div>
 
-            <!-- คนที่ 3 -->
+            <!-- บุคลากรที่ 3 -->
             <div class="card">
-                <img src="images/teacher3.jpg" alt="ครูผู้สอน">
-                <h3>นายประเสริฐ สายกลั่น</h3>
-                <p>ครูประจำแผนกวิชาช่างยานยนต์</p>
+                <img src="00427.jpg" alt="ว่าที่ร้อยตรีเจษฎา ชูดวง">
+                <h3>ว่าที่ร้อยตรีเจษฎา ชูดวง</h3>
+                <p>หัวหน้างานกิจการนักศึกษาและการสื่อสารองค์กร</p>
             </div>
 
-            <!-- คนที่ 4 -->
+            <!-- บุคลากรที่ 4 -->
             <div class="card">
-                <img src="images/teacher4.jpg" alt="ครูผู้สอน">
-                <h3>นางสาวณิชาภัทร วงศ์สว่าง</h3>
-                <p>ครูประจำแผนกวิชาการบัญชี</p>
-            </div>
-
-            <!-- คนที่ 5 -->
-            <div class="card">
-                <img src="images/teacher5.jpg" alt="เจ้าหน้าที่">
-                <h3>นายธนพล สุวรรณโชติ</h3>
-                <p>เจ้าหน้าที่งานทะเบียนและวัดผล</p>
+                <img src="07304.jpg" alt="นางเมธาวดี ศรีคช">
+                <h3>นางเมธาวดี ศรีคช</h3>
+                <p>หัวหน้าแผนกสามัญ</p>
             </div>
         </div>
     </main>
